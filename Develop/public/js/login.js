@@ -25,7 +25,7 @@ $(document).ready(function() {
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(email, password) {
     $.post("/api/login", {
-      email: email,
+      email: email, //uses the email and password to validate the login
       password: password
     })
       .then(function() {
@@ -33,7 +33,7 @@ $(document).ready(function() {
         // If there's an error, log the error
       })
       .catch(function(err) {
-        console.log(err);
+        console.log(err); // logs any errors
       });
   }
 });
