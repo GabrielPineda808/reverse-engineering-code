@@ -7,6 +7,7 @@ In this tutorial we will go into detail on what each file does and how it inerac
 ## Table of Contents
 
 - [Config](#config)
+- [Models](#models)
 
 <br />
 
@@ -66,3 +67,40 @@ To keep the authentication state across HTTP requests. `Passport.serializeUser` 
 ---
 
 <br />
+
+## Models
+
+<br />
+
+The Models folder contains files needed to connect to the database in order to retrieve and create user data.
+
+<br />
+
+1. `index.js` - Connects to database and imports users data logs.
+
+<br />
+
+- [indexjs](img\indexjs.PNG)
+<br />
+
+2. `user.js` - Creates user information that is stored into the database. Uses `bcrypt` for password hashing to create a more secure database.
+
+<br />
+
+- [userjs](img\userjs.PNG)
+<br />
+
+`Bcrypt` is required for password hashing. 
+
+First the User model is created based off the user's input of email address and password. If the username and password are valid it redirect if else it will just return with blank form fields.
+
+`Bcrypt` is used to compare if the user provided password matches a hashed password in the database. 
+
+`Bcrypt` is also used to hash a new password before it is created.
+
+<br />
+
+---
+
+<br />
+
