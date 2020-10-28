@@ -11,21 +11,22 @@ passport.use(new LocalStrategy(
   },
   function(email, password, done) {
     // When a user tries to sign in this code runs
+    // the findone functions seraching throug hte database for one user
     db.User.findOne({
       where: {
-        email: email
+        email: email // we search through the DB for the specific email and return that
       }
     }).then(function(dbUser) {
       // If there's no user with the given email
       if (!dbUser) {
         return done(null, false, {
-          message: "Incorrect email."
+          message: "Incorrect email." // return incorrect email if user does not exist
         });
       }
       // If there is a user with the given email, but the password the user gives us is incorrect
       else if (!dbUser.validPassword(password)) {
         return done(null, false, {
-          message: "Incorrect password."
+          message: "Incorrect password." //if password is incorrect it returns the following
         });
       }
       // If none of the above, return the user
@@ -38,11 +39,11 @@ passport.use(new LocalStrategy(
 // Sequelize needs to serialize and deserialize the user
 // Just consider this part boilerplate needed to make it all work
 passport.serializeUser(function(user, cb) {
-  cb(null, user);
+  cb(null, user); // callback function 
 });
 
 passport.deserializeUser(function(obj, cb) {
-  cb(null, obj);
+  cb(null, obj); // callback function 
 });
 
 // Exporting our configured passport

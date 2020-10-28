@@ -8,10 +8,10 @@ $(document).ready(function() {
   loginForm.on("submit", function(event) {
     event.preventDefault();
     var userData = {
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
+      email: emailInput.val().trim(), //takes the email written in the form
+      password: passwordInput.val().trim() //takes the password written in the form
     };
-
+    // if there is no proper email or password it returns blank
     if (!userData.email || !userData.password) {
       return;
     }
