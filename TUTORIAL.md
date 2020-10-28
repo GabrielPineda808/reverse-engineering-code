@@ -9,6 +9,7 @@ In this tutorial we will go into detail on what each file does and how it inerac
 - [Config](#config)
 - [Models](#models)
 - [Public](#public)
+- [Routes](#routes)
 
 <br />
 
@@ -130,6 +131,54 @@ The Public folder contains html needed for the front end of the application in o
 <br />
 
 3. `login.html, members.html, signup.html` - Page layouts.
+
+<br />
+
+---
+
+<br />
+
+## Routes
+
+<br />
+
+The Routes folder contains files used to  route the user's data and display the correct data.
+
+<br />
+
+1. `api-routes.js` - Routes for logging in and getting users data to be displayed.
+
+<br />
+
+- [Routes](img\routes.PNG)
+
+<br />
+
+Models and Passport are required. 
+
+`Passport.authenticate("local")` will check if the user is valid in orde to direct them to the members page.
+
+`app.post("/api/signup")` function is used to for signing up a user. 
+
+`app.get("/logout")` function used to log out the user.
+
+`app.get("/api/user_data")` function is used to retrieve user data.
+
+<br />
+
+2. `html-routes.js` - Routes to authenticate the user's login and re-direct the user to the correct html page.
+
+<br />
+
+- [Routes](img\routes.PNG)
+<br />
+
+Path is required (it calls the module of the isAuthenticated.js), then isAuthenticated is used to check if the user is logged in.
+
+`app.get("/")` function is used to direct the user to the members page if they have a valid account or the signup if they do not.
+`app.get("/login")` function is used to direct the user to the member page or send them to the login page if they do not.
+
+`app.get("/members")` function will check if the user is logged in with their information before accessing the members page if not then theyll be sent to the signup page.
 
 <br />
 
