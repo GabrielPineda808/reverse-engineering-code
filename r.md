@@ -9,7 +9,7 @@ In this tutorial I will be walking you through the functionality of the code use
 ## Table of Contents
 
 - [Application Description](#application)
-
+- [Technologies](#technologies)
 
 <br />
 
@@ -29,3 +29,22 @@ This application generates a website through node.js that has a sign up page and
 
 <br />
 
+## Technologies
+
+<br />
+
+Technologies used in this project:
+
+- `express` - node.js webapp framework
+- `sequelize` - ORM
+- `mysql` - mysql client 
+- `express-session` - a session middleware
+- `passport` - authentication middleware
+- `passport-local` - authentication with a username and password
+- `bcryptjs` - a way to provide password security
+
+<br />
+
+---
+
+<br />
