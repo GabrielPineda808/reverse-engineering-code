@@ -10,6 +10,7 @@ In this tutorial we will go into detail on what each file does and how it inerac
 - [Models](#models)
 - [Public](#public)
 - [Routes](#routes)
+- [Server](#server)
 
 <br />
 
@@ -185,3 +186,24 @@ Path is required (it calls the module of the isAuthenticated.js), then isAuthent
 ---
 
 <br />
+
+## Server
+
+<br />
+
+The server.js file requires packages, sets up PORTS, creates express, middleware, routes, and syncs the database. 
+
+<br />
+
+- [Routes](img\server.PNG)
+<br />
+
+Requires the necessary NPM packages used to run the application.
+
+Sets up the port and syncs it to the models directory for the database.
+
+Creates an express app to configure middleware needed for the authentication.
+
+`Express-sessions` is used to keep track of login status.
+
+Requires the routes to correspond to the correct file in the `Routes` folder.
