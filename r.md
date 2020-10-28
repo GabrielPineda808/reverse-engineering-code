@@ -10,6 +10,7 @@ In this tutorial I will be walking you through the functionality of the code use
 
 - [Application Description](#application)
 - [Technologies](#technologies)
+- [How to install](#installation)
 
 <br />
 
@@ -42,6 +43,58 @@ Technologies used in this project:
 - `passport` - authentication middleware
 - `passport-local` - authentication with a username and password
 - `bcryptjs` - a way to provide password security
+
+<br />
+
+---
+
+<br />
+
+## Installation
+
+<br />
+
+1. You must first clone the following github repository into your computer
+
+<br />
+
+```
+git clone https://github.com/GabrielPineda808/reverse-engineering-code.git
+```
+
+<br />
+
+2. Then inside of the repositories terminal you can install the dependencies.
+
+<br />
+
+```
+npm install
+```
+
+<br />
+
+3. In mysql workbench, create a new MySQL database and name it `passport_demo`.
+
+<br />
+
+4. In the `config` folder update the `config.json` file's `development` object to match your own local MySQL database(usernam, password, and port).
+
+<br />
+
+5. Start local host server with server.js by using the terminal.
+
+<br />
+
+```
+node server.js
+```
+<br />
+
+6. Open your local host in the browser of choice (example below of url).
+```
+    http://localhost:8080/
+```
 
 <br />
 
