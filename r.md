@@ -12,6 +12,8 @@ In this tutorial I will be walking you through the functionality of the code use
 - [Technologies](#technologies)
 - [Description](#description)
 - [How to install](#installation)
+- [Github Repository](#GithubRepository)
+- [Authors](#Authors)
 
 <br />
 
@@ -145,3 +147,20 @@ node server.js
 ---
 
 <br />
+
+
+## GithubRepository
+- [Tutorial Repo](https://github.com/GabrielPineda808/reverse-engineering-code.git)
+
+<br />
+
+---
+
+<br />
+
+## Authors
+
+* **Gabriel Pineda** 
+
+- [Link to Github](https://github.com/GabrielPineda808)
+- [Link to LinkedIn](https://www.linkedin.com/in/gabriel-pineda-a94535195/)
