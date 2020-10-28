@@ -10,6 +10,7 @@ In this tutorial I will be walking you through the functionality of the code use
 
 - [Application Description](#application)
 - [Technologies](#technologies)
+- [Description](#description)
 - [How to install](#installation)
 
 <br />
@@ -46,6 +47,49 @@ Technologies used in this project:
 
 <br />
 
+---
+
+<br />
+
+## Description
+
+<br />
+Description of each file.
+
+- `config`
+
+    - middleware
+        - isAuthenticated.js - Makes it so the user cannot access certain routes without first loggin in or creating an account.
+    
+    - config.json - Configuration to connect to mysql database.
+
+    - passport.js - Authentication to log in via email address and password.
+
+- `models`
+
+    - index.js - Connects to database and imports users data logs.
+
+    - user.js -  Uses `bcrypt` for password hashing to create a secure database.WW
+
+- `public`
+    - js
+        - login.js - Login validation
+
+        - members.js - Checks to see which user is logged in, in order update the html page.
+
+        - signup.js - Creation validation for new users
+
+- `routes`
+
+    - api-routes.js - Routes for logging in and displaying users data.
+
+    - html-routes.js - Authenticate the user login and re-directs the user to the login html page.
+
+- `package.json` - Contains dependencies.
+
+- `server.js` - Requires packages, sets up PORTS, creates express, middleware, routes, and syncs the database.
+
+<br />
 ---
 
 <br />
