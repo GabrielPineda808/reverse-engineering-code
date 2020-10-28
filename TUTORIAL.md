@@ -8,6 +8,7 @@ In this tutorial we will go into detail on what each file does and how it inerac
 
 - [Config](#config)
 - [Models](#models)
+- [Public](#public)
 
 <br />
 
@@ -104,3 +105,34 @@ First the User model is created based off the user's input of email address and 
 
 <br />
 
+## Public
+
+<br />
+
+The Public folder contains html needed for the front end of the application in order to display it.
+
+<br />
+
+1. `js` - This folder contains validation for the login, members, and signup pages.
+
+    - login.js - Login validation
+
+    - members.js - Checks to see which user is logged in and updates the html page.
+
+    - signup.js - New user creation validation
+
+<br />
+
+2. `stylesheets` - Contains CSS styling for the front end.
+
+    - style.css - styling
+
+<br />
+
+3. `login.html, members.html, signup.html` - Page layouts.
+
+<br />
+
+---
+
+<br />
